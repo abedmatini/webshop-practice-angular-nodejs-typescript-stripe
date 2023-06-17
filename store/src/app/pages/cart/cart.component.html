@@ -63,7 +63,9 @@
                 (click)="onRemoveFromCart(element)" color="warn" class="float-right"><mat-icon>close</mat-icon></button>
             </td>
             <td mat-footer-cell *matFooterCellDef>
-                <button mat-raised-button color="primary" class="float-right"> Proceed to Checkout</button>
+                <button
+                (click)="onCheckout()"
+                mat-raised-button color="primary" class="float-right"> Proceed to Checkout</button>
                 <!-- <span class="font-bold py-5 block">
                     {{getTotal(cart.items) | currency}}
                 </span> -->
